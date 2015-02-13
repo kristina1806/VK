@@ -1,0 +1,129 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %title VK
+    = stylesheet_link_tag "app"
+  %body
+    .topmenu
+      Здесь разместить поле для поиса, кнопки-ссылки games, helps, invite, music, logout - списком
+    .iconpadding
+      тест ируем кол онку с икон ка ми
+    .grid
+      .row
+        .photogallery.column.small-12
+          .colphotonorm.column
+            .row
+              .small-6.column.colphotolow
+                %img{:src => "images/3.jpg", :width => "100%"}
+              .small-6.column.colphotolow
+                %img{:src => "images/4.jpg", :width => "100%"}
+            .row
+              .small-12.column.colphotolow
+                %img.test{:src => "images/5.jpg", :height => "50%"}
+          .colphotonorm.column
+            .small-12
+              %img{:src => "images/6.jpg", :width => "100%"}
+          .colphotonarrow.column
+            .small-12.column
+              %img{:src => "images/7.jpg", :width => "100%"}
+            .small-12.column
+              %img{:src => "images/8.jpg", :width => "100%"}
+      .row
+        .leftcolumn.small-3.column
+          .small-12
+            %img{:src => "images/9.jpg", :width => "100%"}
+          .small-12
+            %button.leftcolumn-button
+              Send a message
+        .rightcolumn.small-9.column
+          .row
+            .small-8.column
+              %h3
+                Emilia Clarke
+              %p
+                27 years, Khaleesi at Game of Thrones, London
+            .small-4.column
+              .row
+                .small-4.column
+                  %h2
+                    56k
+                  %p
+                    followers
+                .small-4.column
+                  %h2
+                    56k
+                  %p
+                    followers
+                .small-4.column
+                  %h2
+                    56k
+                  %p
+                    followers
+
+      /   .small-12.large-6.column.background-small.background-large
+      /     .row
+      /       .small-4.column
+      /         Пусть на этой страничке будут анекдоты и истории.
+      /       .small-4.column
+      /         «Два рубля назад я заварил чай, и он еще теплый».
+      /       .small-4.column
+      /         \- Пап, пап, а на нас отразится финансовый кризис?
+      /         \- Нет, сынок, отразится он на тех у кого много денег, а нам просто конец!
+      /   .small-12.large-6.column
+      /     .row
+      /       .small-4.column
+      /         Пусть на этой страничке будут анекдоты и истории.
+      /       .small-4.column
+      /         «Два рубля назад я заварил чай, и он еще теплый».
+      /       .small-4.column
+      /         \- Пап, пап, а на нас отразится финансовый кризис?
+      /         \- Нет, сынок, отразится он на тех у кого много денег, а нам просто конец!
+      / .row
+      /   .small-7.large-12.column
+      /     Зашел сегодня в банк. Там два банкомата. На одном висит лист бумаги с надписью Приносим свои извинения, в банкомате кончилась бумага, возле второго человек 10 очередь.
+      /     / = image_tag "5.jpg"
+      /     %img{:src => "images/5.jpg", :width => "100%"}/
+      /   .small-5.large-3.column
+      /     Я посмотрел на все это и подошел к первому банкомату. Сунул карточку, снял денег и начал уходить, и тут я заметил как половина очереди от второго банкомата бросилась к первому... О чем они думали раньше? Нет бумаги, значит деньги печатать не на чем?
+      /   .small-8.large-5.column
+      /     По количеству миллиардеров мы, всего за несколько лет, с легкостью
+      /     обогнали Японию и Германию, а теперь догоняем США. Это говорит о том,
+      /     что воровать намного легче, чем зарабатывать.
+      /   .small-4.large-4.column
+      /     Не в деньгах счастье - человек, имеющий десять миллионов долларов, может быть ничуть не счастливее человека, имеющего девять.
+      / .row
+      /   .small-12.large-7.column
+      /     %img{:src => "images/4.jpg", :width => "100%"}/
+      /   .small-3.large-2.column
+      /     %img{:src => "images/3.jpg", :width => "100%"}/
+      /   .small-9.large-3.column
+      /     %img{:src => "images/2.jpg", :width => "100%"}/
+      / .row
+      /   .small-12.large-8.column
+      /     .row
+      /       .small-3.column
+      /         %img{:src => "images/6.jpg", :width => "100%"}/
+      /       .small-3.column
+      /         %img{:src => "images/7.jpg", :width => "100%"}/
+      /       .small-6.column
+      /         %img{:src => "images/11.jpg", :width => "100%"}/
+      /   .small-7.large-3.column
+      /     %img{:src => "images/9.jpg", :width => "100%"}/
+      /   .small-5.large-1.column
+      /     %img{:src => "images/10.jpg", :width => "100%"}/
+      / .row
+      /   .small-3.small-offset3.column
+      /     %img{:src => "images/12.jpg", :width => "100%"}/
+      /     здесь будет какое-то количество тестового текста
+      /   .small-3.small-offset-3.column
+      /     %img{:src => "images/13.jpg", :width => "100%"}/
+      /     здесь будет какое-то количество тестового текста
+      / .row
+      /   .small-offset3.small-9.large-3.column
+      /     %img{:src => "images/14.jpg", :width => "100%"}/
+      /   .small-12.large-6.column
+      /     %img{:src => "images/15.jpg", :width => "100%"}/
+      / .row
+      /   .small-5.small-centered
+      /     Здесь тестируем колонку, которую нужно выровнять по центру в незавершенном ряду. С помощью margin: auto выравнивается, но должны быть и другие способы.

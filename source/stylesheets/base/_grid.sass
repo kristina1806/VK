@@ -1,0 +1,70 @@
+$columns: 12 !default
+$gridWidth: 1032px !default
+$base-color: #AD141E !default
+$gutters: 3px !default
+$menupadding: 57px !default
+$iconpadding: 68px !default
+
+*
+  box-sizing: border-box
+
+.grid
+  width: $gridWidth
+  box-sizing: border-box
+  // background-color: lighten($base-color, 25%)
+  // padding: $gutters
+  margin: 0 auto
+  padding-left: $iconpadding
+  padding-top: $menupadding
+
+.row
+  max-width: 100%
+  width: $gridWidth
+  margin: auto
+
+.row .row
+  margin: 0
+
+.column
+  float: left
+  padding: 0 $gutters
+
+.row:last-child
+  padding-right: 0
+
+.row:after
+  width: 100%
+  clear: both
+  content: ""
+  display: block
+
+@for $i from 0 through $columns
+  .small-#{$i}
+    $colWidth: 100%/$columns*$i
+    width: $colWidth 
+  .small-offset-#{$i}
+    margin-left: 100%/$columns*$i
+.small-centered
+  margin: auto
+  padding: 0 10px
+.small-uncentered
+  margin: 0
+  padding: 0 10px
+.background-small
+  background-color: lighten($base-color, 50%)
+
+@media screen and (min-width: 1200px)
+  .background-large
+    background-color: darken($base-color, 10%)
+  @for $i from 0 through $columns
+    .large-#{$i}
+      $colWidth: 100%/$columns*$i
+      width: $colWidth 
+    .large-offset-#{$i}
+      margin-left: 100%/$columns*$i
+  .large-centered
+    margin: auto
+    padding: 0 10px
+  .large-uncentered
+    margin: 0
+    padding: 0 10px
